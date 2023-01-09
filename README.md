@@ -1,17 +1,29 @@
 ---
-page_type: CompanyNews Component Description
+page_type: 
+ CompanyNews Component Description
 languages:
-- typescript
+ typescript, react-native fluent-ui
 products:
-- PowerApps component framework
-description: "The plugin provides News feature, by default getting news for a text from BING news, but can be customized for other news sources."
+ PowerApps Component Framework 
+ (Refactored for new Virtual PCF) 
+description: 
+ "The plugin provides News feature, by default getting news for a text from BING news, but can be customized for other news sources."
 ---
 
-# CompanyNews Component
+# CompanyNews Component (Refactored for Virtual PCFs)
+## Refeactored and Updated 2023 
 
+This project was originally a Microsoft sample provided with the Dynamics 365 SDK. It has been refactored a couple of times through the years, however there were still a few areas where the design fell short making it not viable for use in a production Dynamics 365 environmeent--so I set out to change that. 
+
+**This version of the Company News PCF component has the following updates from the previous version:**
+- Been Refactored to take advantage of the new **virtual** PCF components 
+- Completely **React and Fluent-UI native** in a Dynamics or Power Platform Environment (it uses the React and Fluent-UI provided by the environment and does not load its own copy of the framework)
+- Several styling updates to improve the overall appearance of the control
+- The Bing News search API originally included does not always return relevant results, so I added the ability to use a regular Bing web search instead of a Bing News search. The search that is used is determined by a toggle button in the main UI of the control allowing the user to switch search sources on the fly. 
+ 
 At times we need to fetch and show news about certain elements which are shown in the application or a page. For example, in a CRM application showing a list of accounts, a salesperson might want to keep a check on the latest news about the company.
 
-The control is completely developed using Powerapps Component Framework, and is easy to use and modify. More details on PowerApps Component Framework https://docs.microsoft.com/en-us/powerapps/developer/component-framework/overview
+The control is completely developed using Powerapps Component Framework, and is easy to use and modify. More details on [PowerApps Component Framework]( https://docs.microsoft.com/en-us/powerapps/developer/component-framework/overview)
 
 ## Contents
 
