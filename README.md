@@ -16,7 +16,7 @@ description:
 This project was originally a Microsoft sample provided with the Dynamics 365 SDK. It has been refactored a couple of times through the years, however there were still a few areas where the design fell short making it not viable for use in a production Dynamics 365 environmeent--so I set out to change that. 
 
 **This version of the Company News PCF component has the following updates from the previous version:**
-- Been Refactored to take advantage of the new **virtual** PCF components 
+- It's been Refactored to take advantage of the new **virtual** PCF code components (Learn more about virtual React and Fluent-UI code components [here](https://powerapps.microsoft.com/en-us/blog/virtual-code-components-for-power-apps-using-react-and-fluent-ui-react-platform-libraries/))
 - Completely **React and Fluent-UI native** in a Dynamics or Power Platform Environment (it uses the React and Fluent-UI provided by the environment and does not load its own copy of the framework)
 - Several styling updates to improve the overall appearance of the control
 - The Bing News search API originally included does not always return relevant results, so I added the ability to use a regular Bing web search instead of a Bing News search. The search that is used is determined by a toggle button in the main UI of the control allowing the user to switch search sources on the fly. 
