@@ -1,0 +1,544 @@
+{
+    "_type": "SearchResponse",
+    "queryContext": {
+        "originalQuery": "Coyote Logistics, LLC",
+        "askUserForLocation": true
+    },
+    "webPages": {
+        "webSearchUrl": "https:\/\/www.bing.com\/search?q=Coyote+Logistics%2c+LLC",
+        "totalEstimatedMatches": 3580000,
+        "value": [
+            {
+                "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#WebPages.0",
+                "name": "Supply Chain & Freight Shipping Solutions - Coyote Logistics",
+                "url": "https:\/\/coyote.com\/",
+                "isFamilyFriendly": true,
+                "displayUrl": "https:\/\/coyote.com",
+                "snippet": "Work with a trusted global third-party logistics provider that has been empowering business growth for over 15 years. Our centralized marketplace connects you to the people, technology, data and capacity – full truckload, less than truckload (LTL), intermodal and other capacity or asset solutions – needed to take your supply chain further, faster.",
+                "deepLinks": [
+                    {
+                        "name": "Carriers",
+                        "url": "https:\/\/coyote.com\/carriers\/",
+                        "snippet": "“Coyote’s QuickPay program, used with CoyoteGO®, gives small companies, like ourselves, time to focus on driving and customer service without worrying about the headaches associated with collections.” – Tony Vito, Owner, D&S Trucking of Michigan Inc. “My team and I have been with Coyote Logistics for over 10 years now.",
+                        "deepLinks": [
+                            {
+                                "name": "Frequently Asked Questions",
+                                "url": "https:\/\/resources.coyote.com\/source\/carrier-faq"
+                            },
+                            {
+                                "name": "Carrier Contact Form",
+                                "url": "https:\/\/coyote.com\/carrier-contact-form\/"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Careers",
+                        "url": "https:\/\/coyote.com\/careers\/",
+                        "snippet": "From donating our logistics services to help those in need to supporting our employees in their missions to make a difference, we strive to positively impact the world. UPS Advantage Being part of our team means being part of one of the largest and most trusted global shipping and logistics companies in the world – UPS."
+                    },
+                    {
+                        "name": "Ship Freight",
+                        "url": "https:\/\/coyote.com\/ship-freight\/",
+                        "snippet": "Coyote has a team fully dedicated to supporting the HUSA network across the country.” – Marcello Serrano, Senior Director Logistics, Heineken USA “Since our expectations of Coyote reflect our clients’ expectations of us, we’re able to place trust in its team and fulfill our commitments to our stakeholders seamlessly.”",
+                        "deepLinks": [
+                            {
+                                "name": "Intermodal",
+                                "url": "https:\/\/coyote.com\/ship-freight\/intermodal\/"
+                            },
+                            {
+                                "name": "Managed Supply Chain",
+                                "url": "https:\/\/coyote.com\/ship-freight\/managed-supply-chain\/"
+                            },
+                            {
+                                "name": "Primary Capacity",
+                                "url": "https:\/\/coyote.com\/ship-freight\/primary-capacity\/"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Full Truckload",
+                        "url": "https:\/\/coyote.com\/ship-freight\/full-truckload\/",
+                        "snippet": "At Coyote Logistics, we offer a variety of full truckload freight shipping solutions, including dry van, refrigerated, temperature controlled, flatbed, and more. ... trailers and expedited, to multi-stops, high-value, cross-border and hazmat, we can meet all your shipping needs. Our logistics specialists can help you decide when to ship full ..."
+                    },
+                    {
+                        "name": "Less Than Truckload",
+                        "url": "https:\/\/coyote.com\/ship-freight\/less-than-truckload\/",
+                        "snippet": "Expertise You Can Rely On. Our LTL freight specialists will work with you to find the most efficient way to ship your goods. Whether you have increased volume or seasonal demands, are unsure how to choose a freight class, or need help knowing when to choose LTL over truckload, we’ll have you covered with a tailor-made shipping solution."
+                    },
+                    {
+                        "name": "Request Load Board Access",
+                        "url": "https:\/\/coyote.com\/carriers\/load-board-access\/",
+                        "snippet": "Welcome to Coyote Logistics - North America. Coyote Logistics operates in both North America and Europe. Please select your region below. North America. coyote.com. Europe. coyotelogistics.com. ... Please provide the following information to request access to Coyote’s load board. * *... * * * * * * * * * Get Coyote news, market trends and ..."
+                    },
+                    {
+                        "name": "About US",
+                        "url": "https:\/\/coyote.com\/about\/",
+                        "snippet": "Logistics never stops evolving. Neither does Coyote. We don’t just move freight. We move business with expertise and integrity. And that’s why we’re committed to delivering smarter supply chain solutions and strategic insights that drive the success of our shippers and carriers around the globe."
+                    },
+                    {
+                        "name": "Shipment Tracking",
+                        "url": "https:\/\/tracking.coyote.com\/",
+                        "snippet": "Track your Shipment. Enter a Coyote Shipment Number to get started. Coyote Shipment #"
+                    }
+                ],
+                "dateLastCrawled": "2022-12-27T06:18:00.0000000Z",
+                "language": "en",
+                "isNavigational": true
+            },
+            {
+                "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#WebPages.1",
+                "name": "Logistics & Supply Chain Solutions - Coyote Logistics Europe",
+                "url": "https:\/\/www.coyotelogistics.com\/",
+                "thumbnailUrl": "https:\/\/www.bing.com\/th?id=OIP.oY62g7CUvHHjbBlloYLK7gHaHa&w=80&h=80&c=1&pid=5.1",
+                "isFamilyFriendly": true,
+                "displayUrl": "https:\/\/www.coyotelogistics.com",
+                "snippet": "Coyote Logistics - Europe Drive your business forward. Supply chain solutions to fuel your business. Insights to make it succeed. For Shippers Get access to the capacity solutions, regardless of market conditions. Get a quote now Contact us For Carriers Instantly book preferred loads and lanes to keep your business moving. Log in now Sign up",
+                "dateLastCrawled": "2022-12-26T22:19:00.0000000Z",
+                "language": "en",
+                "isNavigational": false
+            },
+            {
+                "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#WebPages.2",
+                "name": "Coyote Logistics, LLC Company Profile | Alpharetta, GA | Competitors ...",
+                "url": "https:\/\/www.dnb.com\/business-directory\/company-profiles.coyote_logistics_llc.68c24f0c3aa04d740db6e64e3177af6d.html",
+                "isFamilyFriendly": true,
+                "displayUrl": "https:\/\/www.dnb.com\/business-directory\/company-profiles.coyote_logistics_llc.68c24f0c3...",
+                "snippet": "Doing Business As: Coyote Company Description: Key Principal: Angie Hudson See more contacts Industry: Brokers, shipping Printer Friendly View Address: 960 North Point Pkwy Ste 150 Alpharetta, GA, 30005-4123 United States See other locations Phone: Website: www.coyote.com Employees (this site): Actual ESG ranking: ESG industry average:",
+                "dateLastCrawled": "2022-12-23T03:12:00.0000000Z",
+                "language": "en",
+                "isNavigational": false
+            }
+        ],
+        "someResultsRemoved": true
+    },
+    "places": {
+        "value": [
+            {
+                "_type": "LocalBusiness",
+                "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#Places.0",
+                "webSearchUrl": "https:\/\/www.bing.com\/entityexplore?q=Coyote+Logistics&filters=local_ypid:%22YN272x402572876%22&elv=AXXfrEiqqD9r3GuelwApulplaHYCXNNC08Sbv2!tg!Hogcfg3UGC2RVhJFGfvhj4VAc5qPAvZbDM9bxFtGNX6yvI3T*4WydTEQtt!OXQ!m0y",
+                "name": "Coyote Logistics",
+                "url": "https:\/\/www.coyote.com\/",
+                "entityPresentationInfo": {
+                    "entityScenario": "ListItem",
+                    "entityTypeHints": [
+                        "Place",
+                        "LocalBusiness"
+                    ]
+                },
+                "address": {
+                    "addressLocality": "Chicago",
+                    "addressRegion": "IL",
+                    "postalCode": "60647",
+                    "addressCountry": "US",
+                    "neighborhood": ""
+                },
+                "telephone": "(877) 626-9683"
+            }
+        ]
+    },
+    "relatedSearches": {
+        "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#RelatedSearches",
+        "value": [
+            {
+                "text": "coyote logistics llc load board",
+                "displayText": "coyote logistics llc load board",
+                "webSearchUrl": "https:\/\/www.bing.com\/search?q=coyote+logistics+llc+load+board"
+            },
+            {
+                "text": "coyote log in",
+                "displayText": "coyote log in",
+                "webSearchUrl": "https:\/\/www.bing.com\/search?q=coyote+log+in"
+            },
+            {
+                "text": "coyote logistics llc carrier setup",
+                "displayText": "coyote logistics llc carrier setup",
+                "webSearchUrl": "https:\/\/www.bing.com\/search?q=coyote+logistics+llc+carrier+setup"
+            },
+            {
+                "text": "coyote carriers log in",
+                "displayText": "coyote carriers log in",
+                "webSearchUrl": "https:\/\/www.bing.com\/search?q=coyote+carriers+log+in"
+            },
+            {
+                "text": "coyote logistics llc carrier packet",
+                "displayText": "coyote logistics llc carrier packet",
+                "webSearchUrl": "https:\/\/www.bing.com\/search?q=coyote+logistics+llc+carrier+packet"
+            },
+            {
+                "text": "coyote logistics llc alpharetta ga",
+                "displayText": "coyote logistics llc alpharetta ga",
+                "webSearchUrl": "https:\/\/www.bing.com\/search?q=coyote+logistics+llc+alpharetta+ga"
+            },
+            {
+                "text": "coyote logistics llc tracking number",
+                "displayText": "coyote logistics llc tracking number",
+                "webSearchUrl": "https:\/\/www.bing.com\/search?q=coyote+logistics+llc+tracking+number"
+            },
+            {
+                "text": "go coyote",
+                "displayText": "go coyote",
+                "webSearchUrl": "https:\/\/www.bing.com\/search?q=go+coyote"
+            }
+        ]
+    },
+    "videos": {
+        "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#Videos",
+        "readLink": "https:\/\/api.bing.microsoft.com\/api\/v7\/videos\/search?q=Coyote+Logistics%2c+LLC",
+        "webSearchUrl": "https:\/\/www.bing.com\/videos\/search?q=Coyote+Logistics%2c+LLC",
+        "isFamilyFriendly": true,
+        "value": [
+            {
+                "webSearchUrl": "https:\/\/www.bing.com\/videos\/search?q=Coyote%20Logistics,%20LLC&view=detail&mid=883764C36B9438506B92883764C36B9438506B92",
+                "name": "Coyote Logistics: Helping You Deliver on Your Promises",
+                "description": "Coyote Logistics knows that shippers and carriers make promises to their customers every day. As a leading third-party logistics provider, we are committed to helping you fulfill those promises and take your business further, faster. Learn more about how we can drive your business forward at https:\/\/www.coyote.com\/.",
+                "thumbnailUrl": "https:\/\/tse4.mm.bing.net\/th?id=OVP.xnqSa8ouP812tUHbWppV2QHgFo&pid=Api",
+                "datePublished": "2019-08-02T00:59:18.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "isAccessibleForFree": true,
+                "contentUrl": "https:\/\/www.youtube.com\/watch?v=mkUuPqp9jp0",
+                "hostPageUrl": "https:\/\/www.youtube.com\/watch?v=mkUuPqp9jp0",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https:\/\/www.youtube.com\/watch?v=mkUuPqp9jp0",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT1M4S",
+                "motionThumbnailUrl": "https:\/\/tse4.mm.bing.net\/th?id=OM2.kmtQOJRrw2Q3iA_1635748584&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/mkUuPqp9jp0?autoplay=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 4649,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https:\/\/www.bing.com\/videos\/search?q=Coyote%20Logistics,%20LLC&view=detail&mid=BC4FD8E393F301CAF79DBC4FD8E393F301CAF79D",
+                "name": "Find the Right Freight Faster With CoyoteGO",
+                "description": "From on-demand load board access to reload suggestions to keep you moving, CoyoteGO® provides easy-to-use desktop and mobile access to Coyote's marketplace of over 14,000 shippers. Learn more at https:\/\/coyote.com\/technology\/carrier-technology\/.",
+                "thumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OVP.0e8DeaYvqKvtCaoHshPIlAEsDh&pid=Api",
+                "datePublished": "2020-02-24T14:24:15.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "isAccessibleForFree": true,
+                "contentUrl": "https:\/\/www.youtube.com\/watch?v=oa_eKROZthk",
+                "hostPageUrl": "https:\/\/www.youtube.com\/watch?v=oa_eKROZthk",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https:\/\/www.youtube.com\/watch?v=oa_eKROZthk",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT38S",
+                "motionThumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OM2.nffKAfOT49hPvA_1661948187&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/oa_eKROZthk?autoplay=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 16084,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https:\/\/www.bing.com\/videos\/search?q=Coyote%20Logistics,%20LLC&view=detail&mid=18E005000AC1FF4FC58D18E005000AC1FF4FC58D",
+                "name": "Coyote Logistics Broker Review",
+                "description": "Coyote Logistics broker review. check out Mudflap for fuel discounts. no fees, just download the app. https:\/\/dashboard.mudflapinc.com\/invite\/a94b2",
+                "thumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OVP.J3a_vs8Z0F_cKSz3ZD8BpgEsDh&pid=Api",
+                "datePublished": "2021-04-09T02:26:00.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "isAccessibleForFree": true,
+                "contentUrl": "https:\/\/www.youtube.com\/watch?v=Ud_TK_VUBn0",
+                "hostPageUrl": "https:\/\/www.youtube.com\/watch?v=Ud_TK_VUBn0",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https:\/\/www.youtube.com\/watch?v=Ud_TK_VUBn0",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT12M16S",
+                "motionThumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OM1.jcVP_8EKAAXgGA_1631926319&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/Ud_TK_VUBn0?autoplay=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 1970,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https:\/\/www.bing.com\/videos\/search?q=Coyote%20Logistics,%20LLC&view=detail&mid=D043F626B994CAC54A3ED043F626B994CAC54A3E",
+                "name": "CoyoteGO: On-Demand Digital Freight Platform for Shippers & Carriers",
+                "description": "CoyoteGO® is the digital freight platform that connects shippers and carriers through on-demand access to Coyote's vast marketplace. Shippers, simply quote, ship, track and GO. https:\/\/go.coyote.com\/register\/shipper\/?medium=coyote_site&source=shipper_page&name=sign_up_button Carriers, negotiate and book the loads you want from your desktop or ...",
+                "thumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OVP.wyIal2VtBCtzGXFxijZMBgEsDh&pid=Api",
+                "datePublished": "2020-02-24T12:02:56.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "isAccessibleForFree": true,
+                "contentUrl": "https:\/\/www.youtube.com\/watch?v=R66qSbOVRaw",
+                "hostPageUrl": "https:\/\/www.youtube.com\/watch?v=R66qSbOVRaw",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https:\/\/www.youtube.com\/watch?v=R66qSbOVRaw",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT59S",
+                "motionThumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OM2.PkrFypS5JvZD0A_1646214365&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/R66qSbOVRaw?autoplay=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 4168,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https:\/\/www.bing.com\/videos\/search?q=Coyote%20Logistics,%20LLC&view=detail&mid=B9A1D00A4F2D9C18E68DB9A1D00A4F2D9C18E68D",
+                "name": "On-Demand Freight Quoting & Shipping with CoyoteGO",
+                "description": "Shipping has never been easier with the CoyoteGO® digital freight platform. Register to start quoting, booking and tracking your Coyote freight online -- any time, anywhere. Create your account at https:\/\/go.coyote.com\/register\/shipper\/.",
+                "thumbnailUrl": "https:\/\/tse3.mm.bing.net\/th?id=OVP.qTewNN2DNfPtIifeJz4vLgEsDh&pid=Api",
+                "datePublished": "2020-02-24T08:00:00.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "isAccessibleForFree": true,
+                "contentUrl": "https:\/\/www.youtube.com\/watch?v=mgy0I1Q4e2g",
+                "hostPageUrl": "https:\/\/www.youtube.com\/watch?v=mgy0I1Q4e2g",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https:\/\/www.youtube.com\/watch?v=mgy0I1Q4e2g",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT39S",
+                "motionThumbnailUrl": "https:\/\/tse3.mm.bing.net\/th?id=OM2.jeYYnC1PCtChuQ_1636241534&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/mgy0I1Q4e2g?autoplay=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 135918,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https:\/\/www.bing.com\/videos\/search?q=Coyote%20Logistics,%20LLC&view=detail&mid=0B08A80145333D26A17D0B08A80145333D26A17D",
+                "name": "CoyoteGO: Digital Freight Platform for European Shippers",
+                "description": "Welcome to Coyote's digital freight platform. With CoyoteGO®, you get end-to-end visibility for your shipments on-demand. It's easy to keep track of all your Coyote freight, from building a shipment through payment and invoicing. In CoyoteGO, you can: - Build your shipments on-demand - Track your shipments in transit - Interact on desktop or ...",
+                "thumbnailUrl": "https:\/\/tse1.mm.bing.net\/th?id=OVP.MtRAm7TEI25PuRIzrBaxHQEsDh&pid=Api",
+                "datePublished": "2021-11-05T16:39:43.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "isAccessibleForFree": true,
+                "contentUrl": "https:\/\/www.youtube.com\/watch?v=JAxy-9MU69Q",
+                "hostPageUrl": "https:\/\/www.youtube.com\/watch?v=JAxy-9MU69Q",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https:\/\/www.youtube.com\/watch?v=JAxy-9MU69Q",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT1M18S",
+                "motionThumbnailUrl": "https:\/\/tse1.mm.bing.net\/th?id=OM1.faEmPTNFAagICw_1651125749&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/JAxy-9MU69Q?autoplay=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 396,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https:\/\/www.bing.com\/videos\/search?q=Coyote%20Logistics,%20LLC&view=detail&mid=193F8B7E87877B77D82A193F8B7E87877B77D82A",
+                "name": "Employer Takeover - Coyote Logistics in Chicago, IL",
+                "description": "\\\"For shippers. For carriers. For each other. Coyote provides truckload, less-than-truckload, and intermodal brokerage services and transportation management services to more than 14,000 shippers, from Fortune 100 companies to small businesses. Every day we’re identifying the right equipment for customers’ freight from a growing network of ...",
+                "thumbnailUrl": "https:\/\/tse3.mm.bing.net\/th?id=OVP.iUXbrbuO2bnqn8NWrrRlMwEsDh&pid=Api",
+                "datePublished": "2017-09-08T18:43:22.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "isAccessibleForFree": true,
+                "contentUrl": "https:\/\/www.youtube.com\/watch?v=GWJsC_Y8mWc",
+                "hostPageUrl": "https:\/\/www.youtube.com\/watch?v=GWJsC_Y8mWc",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https:\/\/www.youtube.com\/watch?v=GWJsC_Y8mWc",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT2M23S",
+                "motionThumbnailUrl": "https:\/\/tse3.mm.bing.net\/th?id=OM2.Kth3e4eHfos_GQ_1635416675&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/GWJsC_Y8mWc?autoplay=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 978,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https:\/\/www.bing.com\/videos\/search?q=Coyote%20Logistics,%20LLC&view=detail&mid=58A61EDE096014E3029458A61EDE096014E30294",
+                "name": "Coyote Logistics is hiring in Ann Arbor",
+                "description": "If youd like to work for a company thats been named a Top Workplace, Top Digital Company, and a Best Company to Sell For, check out Coyote Logistics in Ann Arbor. The business is a UPS company that is an industry-leading transportation and logistics service provider. On Coyote's careers page, the question is posed: Are you Tenacious, True ...",
+                "thumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OVP.5NDFtRBu32BhfYTAxd-oPAEsDh&pid=Api",
+                "datePublished": "2017-07-31T10:45:05.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "isAccessibleForFree": true,
+                "contentUrl": "https:\/\/www.youtube.com\/watch?v=-0aH9UmR-KU",
+                "hostPageUrl": "https:\/\/www.youtube.com\/watch?v=-0aH9UmR-KU",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https:\/\/www.youtube.com\/watch?v=-0aH9UmR-KU",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT1M7S",
+                "motionThumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OM1.lALjFGAJ3h6mWA_1640421897&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/-0aH9UmR-KU?autoplay=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 143,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https:\/\/www.bing.com\/videos\/search?q=Coyote%20Logistics,%20LLC&view=detail&mid=55EBF2C10D07D480F6EF55EBF2C10D07D480F6EF",
+                "name": "CoyoteGO Demo for Shippers: Become a Self-Service Freight Pro",
+                "description": "Sign up for free (it's fast & easy) to start quoting and booking your freight instantly: go.coyote.com\/register\/shipper\/ Watch two experts from our product team walk you through the key benefits and how to use CoyoteGO®, our free digital freight platform. 1:30: CoyoteGO benefits overview 4:54: Small business use cases 5:45: Mid-sized ...",
+                "thumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OVP.Tl_sUrw5PnLeHd41CkSfYwEsDh&pid=Api",
+                "datePublished": "2021-11-11T01:14:51.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "isAccessibleForFree": true,
+                "contentUrl": "https:\/\/www.youtube.com\/watch?v=E0SpUx-8T2E",
+                "hostPageUrl": "https:\/\/www.youtube.com\/watch?v=E0SpUx-8T2E",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https:\/\/www.youtube.com\/watch?v=E0SpUx-8T2E",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT20M29S",
+                "motionThumbnailUrl": "https:\/\/tse2.mm.bing.net\/th?id=OM2.7_aA1AcNwfLrVQ_1651041158&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/E0SpUx-8T2E?autoplay=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 642,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            },
+            {
+                "webSearchUrl": "https:\/\/www.bing.com\/videos\/search?q=Coyote%20Logistics,%20LLC&view=detail&mid=DCC05FB0DCA8A8A05A73DCC05FB0DCA8A8A05A73",
+                "name": "Coyote Logistics",
+                "description": "Coyote’s “No Excuses” philosophy to offer both shippers and carriers the best service experience in the industry has catapulted it to be one of America’s leading 3PLs. Coyote’s fanaticism for this commitment is fueled by its culture, people, and technology every day. Coyote invests in its employees, offering rigorous training programs ...",
+                "thumbnailUrl": "https:\/\/tse4.mm.bing.net\/th?id=OVP.SI5gQlzTG-FfRKM5tGdb6QHgFo&pid=Api",
+                "datePublished": "2017-01-09T08:00:00.0000000",
+                "publisher": [
+                    {
+                        "name": "YouTube"
+                    }
+                ],
+                "isAccessibleForFree": true,
+                "contentUrl": "https:\/\/www.youtube.com\/watch?v=eUyJAe3Dd3s",
+                "hostPageUrl": "https:\/\/www.youtube.com\/watch?v=eUyJAe3Dd3s",
+                "encodingFormat": "mp4",
+                "hostPageDisplayUrl": "https:\/\/www.youtube.com\/watch?v=eUyJAe3Dd3s",
+                "width": 1280,
+                "height": 720,
+                "duration": "PT1M16S",
+                "motionThumbnailUrl": "https:\/\/tse4.mm.bing.net\/th?id=OM1.c1qgqKjcsF_A3A_1652080590&pid=Api",
+                "embedHtml": "<iframe width=\"1280\" height=\"720\" src=\"http:\/\/www.youtube.com\/embed\/eUyJAe3Dd3s?autoplay=1\" frameborder=\"0\" allowfullscreen><\/iframe>",
+                "allowHttpsEmbed": true,
+                "viewCount": 1294,
+                "thumbnail": {
+                    "width": 160,
+                    "height": 120
+                },
+                "allowMobileEmbed": true,
+                "isSuperfresh": false
+            }
+        ],
+        "scenario": "List"
+    },
+    "rankingResponse": {
+        "mainline": {
+            "items": [
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 0,
+                    "value": {
+                        "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#WebPages.0"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 1,
+                    "value": {
+                        "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#WebPages.1"
+                    }
+                },
+                {
+                    "answerType": "WebPages",
+                    "resultIndex": 2,
+                    "value": {
+                        "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#WebPages.2"
+                    }
+                },
+                {
+                    "answerType": "Videos",
+                    "value": {
+                        "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#Videos"
+                    }
+                },
+                {
+                    "answerType": "RelatedSearches",
+                    "value": {
+                        "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#RelatedSearches"
+                    }
+                }
+            ]
+        },
+        "sidebar": {
+            "items": [
+                {
+                    "answerType": "Places",
+                    "resultIndex": 0,
+                    "value": {
+                        "id": "https:\/\/api.bing.microsoft.com\/api\/v7\/#Places.0"
+                    }
+                }
+            ]
+        }
+    }
+}
