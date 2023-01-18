@@ -20,7 +20,7 @@ This project was originally a Microsoft sample provided with the Dynamics 365 SD
 - Completely **React and Fluent-UI native** in a Dynamics or Power Platform Environment (it uses the React and Fluent-UI provided by the environment and does not load its own copy of the framework)
 - Several styling updates to improve the overall appearance of the control
 - The Bing News search API originally included does not always return relevant results, so I added the ability to use a regular Bing web search instead of a Bing News search. The search that is used is determined by a toggle button in the main UI of the control allowing the user to switch search sources on the fly. 
- 
+- ---
 At times we need to fetch and show news about certain elements which are shown in the application or a page. For example, in a CRM application showing a list of accounts, a salesperson might want to keep a check on the latest news about the company.
 
 The control is completely developed using Powerapps Component Framework, and is easy to use and modify. More details on [PowerApps Component Framework]( https://docs.microsoft.com/en-us/powerapps/developer/component-framework/overview)
@@ -29,40 +29,46 @@ The control is completely developed using Powerapps Component Framework, and is 
 
 Outline the file contents of the repository. It helps users navigate the codebase, build configuration and any related assets.
 
-| File/folder       | Description                                |
+| **File/folder**   | **Description**                            |
 |-------------------|--------------------------------------------|
-| `companynews`     | PCF code to show news.                     |
+| `companynews`     | Directory with PCF code to show news.      |
+| `Solutions`       | Directory with the build files for creating the solution zip |
+| `bingSampleResponse.json` | Sample json response from the Bing News API |
+| `bingwebsearchresponse.json` | Sample json response from Bing Web Search API |
 | `.gitignore`      | Define what to ignore at commit time.      |
-| `CHANGELOG.md`    | List of changes to the sample.             |
 | `CONTRIBUTING.md` | Guidelines for contributing to the sample. |
 | `README.md`       | This README file.                          |
 | `LICENSE`         | The license for the sample.                |
 
 ## Prerequisites
 
-Install Powerapps command line support - https://docs.microsoft.com/en-us/powerapps/developer/component-framework/get-powerapps-cli
+- Install **PowerApps Command Line (CLI) Support** - You can download [here](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/get-powerapps-cli)
+- Install **Microsoft Visual Studio build environment** - If you have a full version of Visual Studio installed then you already have it---if you don't, you can find it [here]().
+- A working installation of **Node.js** and **npm**. This project is based on Node v18.8.2.
+- Obtain a **Bing News Search API key** from [Azure Cognative Services]().  More details on how to do that below. 
  
 ## Setup
 
-Here is a step by step guide for using the component
+Here is an overview of the steps needed for using the component:
 1. Clone the component to a local directory
-2. Run npm install
-3. Update index.ts and provide Bind news id along with base url under getnews function
-4. Build the code using- npm build run
-5. Execute the component - npm start 
+2. Run `npm install`
+3. Update `index.ts` and provide **Bing News API Key** along with **base URL** under `getnews` function
+4. Build the code using `npm build run`
+5. Execute the component `npm start` 
 
 ## Running the sample
 
-For running the code - npm start
+For running the code use `npm start`.  The node.js project will compile and automatcially launch a web server and open the PowerApps Component Framework control test harness. The test harness will have blank fields as defined by your control manifest. Filling in the values should allow the compoent to render in the test harness.
 
 ## Using the plugin with Dynamics 365 CRM
 
 Add the company news control to the account main form
 The steps in this article add the company news control to the account main form already configured to query news topics collected from Bing News. You can use similar steps to add the control to the main form for other entities, such as contact and competitor.
-Get the Bing News API key and URL
+
+### Get the Bing News API key and URL
 The news control requires a news API URL, API key, and more news URL. For Bing News, the more news URL is preconfigured in the control to use https://www.bing.com/news/search. For the News API URL, and API Key, you’ll need to provide these by creating a Cognitive Service component under your Azure account. Once created, you will get the API key and API URL under the Keys and Endpoint section.  
  
-Import the company news solution 
+### Import the company news solution 
 1.	Go to the following GitHub repo. https://github.com/microsoft/companynewspcfcontrol
 2.	Download Solutions,zip. To do this, open the Solutions folder, open Solutions.zip, and then select Download. 
 3.	Sign-in to Power Apps, and then in the upper right select the environment where you want to install the company news control.
@@ -89,7 +95,7 @@ d.	From Bind to value on a field the dropdown list, select new_newsurl (SingleLi
 e.	On the Field Properties page, select the Web, Phone, and Tablet, client options. 
 f.	On the Field Properties page, select the Display tab, clear the Display label on form option, and then select OK. 
 10.	To provide API Key and Base URL default values, use business rules. Select Business Rules from the form editor, and then select New Business Rule from the bottom of the right pane. 
-11.	In the business rule designer, select Condition on the designer canvas, set Field to Account Name and Operator to Contains data, and then select Apply. Then, select the Components tab, drag a Set Field Value action, and provide a field value where Field is newsapikey and the value is the Key you copied from the Azure Cognitive Services properties. Create another Set Field Value action where Field is newsurl and add the value as the Endpoint you copied from the Azure Cognitive Services properties. Make sure to append “bing/v7.0/news/search” at the end of news URL. Final URLshould look like https://<<yourservicename>>.cognitiveservices.azure.com/bing/v7.0/news/search   
+11.	In the business rule designer, select Condition on the designer canvas, set Field to Account Name and Operator to Contains data, and then select Apply. Then, select the Components tab, drag a Set Field Value action, and provide a field value where Field is newsapikey and the value is the Key you copied from the Azure Cognitive Services properties. Create another Set Field Value action where Field is newsurl and add the value as the Endpoint you copied from the Azure Cognitive Services properties. Make sure to append “`bing/v7.0/news/search`” at the end of news URL. Final URLshould look like `https://<<yourservicename>>.cognitiveservices.azure.com/bing/v7.0/news/search`   
 12.	Save and Activate the rule. Close the business rule designer. 
 13.	Make sure you add the newly added fields, newsapikey and newsurl, to Account Form, but mark default visible as false. 
 14.	In the form designer, select Save and then select Publish. 
