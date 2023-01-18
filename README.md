@@ -60,7 +60,7 @@ Here is an overview of the steps needed for using the component:
 
 For running the code use `npm start`.  The node.js project will compile and automatcially launch a web server and open the PowerApps Component Framework control test harness. The test harness will have blank fields as defined by your control manifest. Filling in the values should allow the compoent to render in the test harness.
 
-## Using the plugin with Dynamics 365 CRM
+## Using the solution/component with Dynamics 365 CRM
 
 Add the company news control to the account main form
 The steps in this article add the company news control to the account main form already configured to query news topics collected from Bing News. You can use similar steps to add the control to the main form for other entities, such as contact and competitor.
@@ -75,7 +75,8 @@ The news control requires a news API URL, API key, and more news URL. For Bing N
 4.	Select Solutions on the left pane, and then select Import on the command bar. 
 5.	In the Import solution wizard, select Choose File, browse to and select Solutions.zip, and then select Open. 
 6.	Select Next, and then select Next again to complete the import. 
-Add the control to the account main form
+
+### Add the control to the Account main form
 1.	In Power Apps, select Solutions on the left pane, select Settings (gear) on the upper right, and then select Advanced settings. 
 2.	Go to Settings > Customizations > Customize the System. 
 3.	In the left navigation tree, expand Entities > Account, select Forms, and then open the Account Main form.
@@ -102,14 +103,8 @@ f.	On the Field Properties page, select the Display tab, clear the Display label
 
 ## Contributing
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+When you submit a pull request, a CLA bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

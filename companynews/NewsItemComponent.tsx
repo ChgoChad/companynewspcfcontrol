@@ -2,16 +2,16 @@
 // Licensed under the MIT License.
 import * as React from "react";
 
-export class NewsItemProps {
-  imageUrl: string;
-  imageName: string;
-  title: string;
+export interface NewsItemProps {
+  imageUrl   : string;
+  imageName  : string;
+  title      : string;
   newsContent: string;
-  url: string;
-  source: string;
-  category: string;
-  agoTime: string;
-  index: number;
+  url        : string;
+  source     : string;
+  category   : string;
+  agoTime    : string;
+  index      : number;
 }
 
 // this is a single news item
@@ -20,7 +20,7 @@ export class NewsItemComponent extends React.Component<NewsItemProps> {
     super(props);
   }
 
-  public render(): JSX.Element {
+  public render(): React.ReactNode {
     return (
       <div className="flex-container">
         <div>
@@ -28,7 +28,7 @@ export class NewsItemComponent extends React.Component<NewsItemProps> {
         </div>
         <div>
           <div className="flex-container2">
-            <a className="news" href={this.props.url} target="_blank">
+            <a className="news" href={this.props.url} target="_blank" rel="noreferrer">
               {this.props.title}
             </a>
             <span className="title">{this.props.newsContent} </span>

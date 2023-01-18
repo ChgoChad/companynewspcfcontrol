@@ -8,10 +8,12 @@ import { GoogleParser } from "./GoogleParser";
 export class News {
   private _apiKey: string;
   private _baseUrl: string;
+  private _useBingWebSearch: boolean;
 
-  public constructor(apiKey: string, baseUrl: string) {
+  public constructor(apiKey: string, baseUrl: string, useBingWebSearch: boolean) {
     this._apiKey = apiKey;
     this._baseUrl = baseUrl;
+    this._useBingWebSearch = useBingWebSearch;
   }
 
   public async getNews(

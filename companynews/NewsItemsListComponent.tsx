@@ -1,16 +1,19 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 import * as React from "react";
+import { useState } from "react";
+import { Constants } from "./Constants";
 import { News } from "./News";
 import { NewsItemComponent, NewsItemProps } from "./NewsItemComponent";
+import { ToggleBase, Toggle } from "@fluentui/react";
 
-export class NewsItemsListProps {
-  apiKey: string;
-  baseUrl: string;
+export interface NewsItemsListProps {
+  apiKey      : string;
+  baseUrl     : string;
   searchString: string;
 }
 
-export class NewsItemsProps {
+export interface NewsItemsProps {
   newsItems: NewsItemProps[]
 }
 
@@ -19,6 +22,7 @@ export class NewsItemListComponent extends React.Component<NewsItemsListProps, N
   private _apiKey: string;
   private _baseUrl: string;
   private _searchString: string;
+  private _searchOrNews: boolean;
 
   constructor(props: NewsItemsListProps) {
     super(props);
@@ -36,12 +40,12 @@ export class NewsItemListComponent extends React.Component<NewsItemsListProps, N
   }
 
   private async getNews(): Promise<void> {
-    var news = new News(this._apiKey, this._baseUrl);
+    var news = new News(this._apiKey, this._baseUrl, this._searchOrNews);
     let newsItems: NewsItemProps[] = await news.getNews(this._searchString, this._apiKey);
     this.setState({newsItems});
   }
 
-  public render(): JSX.Element {
+  public render(): React.ReactNode {
     
     const newsItems = this.state.newsItems.map(
       (newsItem: NewsItemProps, index: number) => {
@@ -49,18 +53,27 @@ export class NewsItemListComponent extends React.Component<NewsItemsListProps, N
       }
     );
 
+    let morenews = "";
+    morenews = Constants.MoreNews + "?q=" + this._searchString;
+
     return (
-      <div>
-        <div className="Title">
-          <h4>
-            News for "{this.props.searchString}"
-          </h4>
-        </div>
+        <div>
+          <div className="Title">
+            <h4 id="newsTitle">
+              News for &quot;{this.props.searchString}&quot;
+            </h4>
+          </div>
+          <div className="container">
+            <Toggle id="searchOrNews" offText="Bing News Search" onText="Bing Web Search" label="Change Source" inlineLabel />
+          </div>
+
           {(this.state.newsItems.length == 0)
-           ? <div><i>No news found</i></div> 
-           : <div className="newsItems">{newsItems}</div>
+            ? <div><i>No news found</i></div>
+            : <><div className="newsItems">{newsItems}</div><br /><div className="moreNews"><a target="_blank" rel="noreferrer" href={morenews}>See more on Bing News</a></div></>
           }
-      </div>
+        </div>
     );
   }
 }
+
+

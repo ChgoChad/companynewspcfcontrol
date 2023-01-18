@@ -1,6 +1,7 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
 import * as moment from "moment";
+import { Constants } from "./Constants";
 import { NewsItemProps } from "./NewsItemComponent";
 
 export class BingParser {
@@ -27,23 +28,19 @@ export class BingParser {
       // todo: limit count
       var newsItem = {} as NewsItemProps;
       if (this._newsJson.value[i].image == null) {
-        newsItem.imageUrl = "";
+        newsItem.imageUrl = Constants.bingTileJpg;
         newsItem.imageName = "";
-      }
-      else {
+      } else {
         newsItem.imageUrl = this._newsJson.value[i].image.thumbnail.contentUrl;
-        newsItem.imageName = this._newsJson.value[i].image.name;
+        newsItem.imageName = this._newsJson.value[i].name;
       }
-      newsItem.imageName = this._newsJson.value[i].name == null ? "" :
-      newsItem.title = this._newsJson.value[i].name;
+      //newsItem.imageName   = this._newsJson.value[i].image.thumbnail.name === null ? "" : 
+      newsItem.title       = this._newsJson.value[i].name;
       newsItem.newsContent = this._newsJson.value[i].description;
-      newsItem.url = this._newsJson.value[i].url;
-      newsItem.source = this.getHost(newsItem.url);
-      newsItem.category =
-        this._newsJson.value[i].category != null ? this._newsJson.value[i].category : "";
-      newsItem.agoTime = this.getTimeAgo(
-        new Date(this._newsJson.value[i].datePublished)
-      );
+      newsItem.url         = this._newsJson.value[i].url;
+      newsItem.source      = this.getHost(newsItem.url);
+      newsItem.category    = this._newsJson.value[i].category !== null ? this._newsJson.value[i].category : "";
+      newsItem.agoTime     = this.getTimeAgo(new Date(this._newsJson.value[i].datePublished));
 
       newsItems.push(newsItem);
     }
@@ -55,11 +52,11 @@ export class BingParser {
     let publishedDate: any = moment(date);
     let currentTime = moment();
 
-    let diff = currentTime.diff(publishedDate);
+    let diff         = currentTime.diff(publishedDate);
     let diffDuration = moment.duration(diff);
-    let diffDays = diffDuration.days();
-    let diffHrs = diffDuration.hours();
-    let diffMins = diffDuration.minutes();
+    let diffDays     = diffDuration.days();
+    let diffHrs      = diffDuration.hours();
+    let diffMins     = diffDuration.minutes();
 
     let dateString = "";
     if (diffDays != 0) {
