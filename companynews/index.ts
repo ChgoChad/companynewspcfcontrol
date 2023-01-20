@@ -9,6 +9,7 @@ export class companynews implements ComponentFramework.ReactControl<IInputs, IOu
     private _apikey: string;
     private _baseurl: string;
     private _searchString: string;
+    private _searchOrNews: boolean;
 
     /**
      * Empty constructor.
@@ -35,6 +36,8 @@ export class companynews implements ComponentFramework.ReactControl<IInputs, IOu
             this._apikey = context.parameters.APIKey.raw;
         if (context.parameters.BaseURL.raw != null)
             this._baseurl = context.parameters.BaseURL.raw;
+        if (context.parameters.SearchOrNews != null)
+            this._searchOrNews = context.parameters.SearchOrNews;
   
       this._container = container;
     }
@@ -48,7 +51,8 @@ export class companynews implements ComponentFramework.ReactControl<IInputs, IOu
         const newsItemsList: NewsItemsListProps = {
             apiKey: this._apikey,
             baseUrl: this._baseurl,
-            searchString: this._searchString
+            searchString: this._searchString,
+            searchOrNews: this._searchOrNews
         }
         return React.createElement(
              NewsItemListComponent, newsItemsList,

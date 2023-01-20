@@ -6,11 +6,13 @@ import { Constants } from "./Constants";
 import { News } from "./News";
 import { NewsItemComponent, NewsItemProps } from "./NewsItemComponent";
 import { ToggleBase, Toggle } from "@fluentui/react";
+import { companynews } from ".";
 
 export interface NewsItemsListProps {
   apiKey      : string;
   baseUrl     : string;
   searchString: string;
+  searchOrNews: boolean;
 }
 
 export interface NewsItemsProps {
@@ -30,6 +32,7 @@ export class NewsItemListComponent extends React.Component<NewsItemsListProps, N
     this._apiKey = props.apiKey;
     this._baseUrl = props.baseUrl;
     this._searchString = props.searchString;
+    this._searchOrNews = props.searchOrNews;
 
     this.state = {newsItems: []};
   }
@@ -39,7 +42,7 @@ export class NewsItemListComponent extends React.Component<NewsItemsListProps, N
 
   }
 
-  private async getNews(): Promise<void> {
+  public async getNews(): Promise<void> {
     var news = new News(this._apiKey, this._baseUrl, this._searchOrNews);
     let newsItems: NewsItemProps[] = await news.getNews(this._searchString, this._apiKey);
     this.setState({newsItems});
@@ -64,7 +67,7 @@ export class NewsItemListComponent extends React.Component<NewsItemsListProps, N
             </h4>
           </div>
           <div className="container">
-            <Toggle id="searchOrNews" offText="Bing News Search" onText="Bing Web Search" label="Source:" inlineLabel onChange={_onChange} />
+            <Toggle id="searchOrNews" offText="Bing News Search" onText="Bing Web Search" label="Source:" inlineLabel onChange={this._onChange} />
           </div>
 
           {(this.state.newsItems.length == 0)
@@ -73,29 +76,33 @@ export class NewsItemListComponent extends React.Component<NewsItemsListProps, N
           }
         </div>
     );
+  }
 
-
-    function _onChange(this: any, ev: React.MouseEvent<HTMLElement>, checked?: boolean) {
-      //console.log('toggle is ' + (checked ? 'checked' : 'not checked'));
+ // private  async _onChange(this: any, ev: React.MouseEvent<HTMLElement>, _checked?: boolean) {
+   //   console.log('toggle is ' + (_checked ? 'checked' : 'not checked'));
       //getNews();
-      // getNews().then(
-      //   function success(result) {
+      // await this.getNews().then(
+      //   function success(result: any) {
       //       console.log(result);
       //   },
-      //   function error(error) {
+      //   function error(error: { message: any; }) {
       //       console.log(error.message);
       //   }
       // )
-     
+    
+
+  //}
+
+  private _onChange = (
+		ev: React.FormEvent<HTMLElement | HTMLInputElement> | undefined, checked?: boolean): void => {
+		// this.setState((prevState: boolean): checked => {
+		// 	prevState._searchOrNews = !!checked;
+		// 	return prevState;
+		// });
+    this.getNews();
+	};
 
 
-  }
-}
-
-
-
-
-  
 }
 
 
