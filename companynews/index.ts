@@ -45,7 +45,6 @@ export class companynews implements ComponentFramework.ReactControl<IInputs, IOu
      * @returns ReactElement root react element for the control
      */
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
-        //const props: IHelloWorldProps = { name: 'Hello, World!' };
         const newsItemsList: NewsItemsListProps = {
             apiKey: this._apikey,
             baseUrl: this._baseurl,

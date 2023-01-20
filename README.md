@@ -58,11 +58,11 @@ Here is an overview of the steps needed for using the component:
 
 ## Running the sample
 
-For running the code use `npm start`.  The node.js project will compile and automatcially launch a web server and open the PowerApps Component Framework control test harness. The test harness will have blank fields as defined by your control manifest. Filling in the values should allow the compoent to render in the test harness.
+For running the code use `npm start`.  The node.js project will compile and automatcially launch a web server and open the PowerApps Component Framework Test Environment. The test environment will have blank fields as defined by your control manifest file. Filling in these values should give your compoent everything it needs to render in the test harness.
 
 ## Using the solution/component with Dynamics 365 CRM
 
-Add the company news control to the account main form
+### Add the company news control to the account main form
 The steps in this article add the company news control to the account main form already configured to query news topics collected from Bing News. You can use similar steps to add the control to the main form for other entities, such as contact and competitor.
 
 ### Get the Bing News API key and URL
@@ -77,11 +77,11 @@ The news control requires a news API URL, API key, and more news URL. For Bing N
 6.	Select Next, and then select Next again to complete the import. 
 
 ### Add the control to the Account main form
-1.	In Power Apps, select Solutions on the left pane, select Settings (gear) on the upper right, and then select Advanced settings. 
-2.	Go to Settings > Customizations > Customize the System. 
-3.	In the left navigation tree, expand Entities > Account, select Forms, and then open the Account Main form.
-4.	In the form editor, add two new text fields, which will be used to pass the key and base URL to the news component. 
-a.	Select New Field from the right navigation Field Explorer. 
+1.	In Power Apps, select **Solutions** in the left pane, select **Settings (gear)** on the upper right, and then select **Advanced settings**. 
+2.	Go to **Settings** > **Customizations** > **Customize the System**. 
+3.	In the left navigation tree, expand+ **Entities** > **Account**, select **Forms**, and then open the **Account Main** form.
+4.	In the form editor, add two new text fields, which will be used to pass the API key and base URL to the news component. 
+a.	Select **New Field** from the right navigation Field Explorer. 
 b.	For both Display name and Name enter newsapikey. Leave the rest of the settings as the default and then select Save and Close.  
 c.	Repeat the previous two steps to create another text field. For both the Display name and Name enter newsurl. Leave the rest of the settings as the default and then select Save and Close. 
 5.	In the form editor, select a place on the form where you want the company news control, and then select Insert tab > Section > One Column. 

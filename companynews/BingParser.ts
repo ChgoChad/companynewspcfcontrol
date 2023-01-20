@@ -25,24 +25,28 @@ export class BingParser {
 
     // iterate over all news items
     for (var i = 0; i < this._newsJson.value.length; i++) {
-      // todo: limit count
-      var newsItem = {} as NewsItemProps;
-      if (this._newsJson.value[i].image == null) {
-        newsItem.imageUrl = Constants.bingTileJpg;
-        newsItem.imageName = "";
-      } else {
-        newsItem.imageUrl = this._newsJson.value[i].image.thumbnail.contentUrl;
-        newsItem.imageName = this._newsJson.value[i].name;
-      }
-      //newsItem.imageName   = this._newsJson.value[i].image.thumbnail.name === null ? "" : 
-      newsItem.title       = this._newsJson.value[i].name;
-      newsItem.newsContent = this._newsJson.value[i].description;
-      newsItem.url         = this._newsJson.value[i].url;
-      newsItem.source      = this.getHost(newsItem.url);
-      newsItem.category    = this._newsJson.value[i].category !== null ? this._newsJson.value[i].category : "";
-      newsItem.agoTime     = this.getTimeAgo(new Date(this._newsJson.value[i].datePublished));
+        // todo: limit count
+        var newsItem = {} as NewsItemProps;
 
-      newsItems.push(newsItem);
+        // if there is no image in the newsitem use the image from the Constants class (which is base64 encoded)
+        // otherwise use the image from the newsItem
+        if (this._newsJson.value[i].image == null) {
+          newsItem.imageUrl = Constants.bingTileJpg;
+          newsItem.imageName = "";
+        } else {
+          newsItem.imageUrl = this._newsJson.value[i].image.thumbnail.contentUrl;
+          newsItem.imageName = this._newsJson.value[i].name;
+        }
+        
+        //newsItem.imageName   = this._newsJson.value[i].image.thumbnail.name === null ? "" : 
+        newsItem.title       = this._newsJson.value[i].name;
+        newsItem.newsContent = this._newsJson.value[i].description;
+        newsItem.url         = this._newsJson.value[i].url;
+        newsItem.source      = this.getHost(newsItem.url);
+        newsItem.category    = this._newsJson.value[i].category !== null ? this._newsJson.value[i].category : "";
+        newsItem.agoTime     = this.getTimeAgo(new Date(this._newsJson.value[i].datePublished));
+
+        newsItems.push(newsItem);
     }
 
     return newsItems;

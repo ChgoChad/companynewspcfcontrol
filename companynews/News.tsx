@@ -16,18 +16,15 @@ export class News {
     this._useBingWebSearch = useBingWebSearch;
   }
 
-  public async getNews(
-    searchString: string,
-    apiKey: string = ""
-  ): Promise<NewsItemProps[]> {
+  public async getNews(searchString: string, apiKey: string = ""): Promise<NewsItemProps[]> {
     let newsItemsList: NewsItemProps[];
     let constants = new Constants();
     let requestHeaders: HeadersInit = new Headers();
     requestHeaders.set("Ocp-Apim-Subscription-Key", this._apiKey);
-    let uriQuery: string =
-      this._baseUrl + "?count=" + constants.Count + "&q=" + searchString;
+    let uriQuery: string = this._baseUrl + "?count=" + constants.Count + "&q=" + searchString;
 
-    if (constants.NewsSource == "Google") {
+    // Build Google Search URL
+      if (constants.NewsSource == "Google") {
       uriQuery =
         this._baseUrl +
         "?count=" +
@@ -38,16 +35,19 @@ export class News {
         apiKey;
     }
 
+    // Make WebAPI call and parse result as json
     const res = await fetch(uriQuery, {
       method: "GET",
       headers: requestHeaders,
     });
     const data = await res.json();
 
+    // If Bing parse with Bing News parser
     if (constants.NewsSource == "Bing") {
       let news: BingParser = new BingParser(data);
       newsItemsList = news.getNews();
     } else {
+      // Parse with Gooogle Parser
       let news: GoogleParser = new GoogleParser(data);
       newsItemsList = news.getNews();
     }

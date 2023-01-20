@@ -64,7 +64,7 @@ export class NewsItemListComponent extends React.Component<NewsItemsListProps, N
             </h4>
           </div>
           <div className="container">
-            <Toggle id="searchOrNews" offText="Bing News Search" onText="Bing Web Search" label="Change Source" inlineLabel />
+            <Toggle id="searchOrNews" offText="Bing News Search" onText="Bing Web Search" label="Source:" inlineLabel onChange={_onChange} />
           </div>
 
           {(this.state.newsItems.length == 0)
@@ -73,7 +73,29 @@ export class NewsItemListComponent extends React.Component<NewsItemsListProps, N
           }
         </div>
     );
+
+
+    function _onChange(this: any, ev: React.MouseEvent<HTMLElement>, checked?: boolean) {
+      //console.log('toggle is ' + (checked ? 'checked' : 'not checked'));
+      //getNews();
+      // getNews().then(
+      //   function success(result) {
+      //       console.log(result);
+      //   },
+      //   function error(error) {
+      //       console.log(error.message);
+      //   }
+      // )
+     
+
+
   }
+}
+
+
+
+
+  
 }
 
 
