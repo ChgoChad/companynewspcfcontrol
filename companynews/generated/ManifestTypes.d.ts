@@ -4,7 +4,6 @@
 
 // Define IInputs and IOutputs Type. They should match with ControlManifest.
 export interface IInputs {
-    SearchOrNews: null;
     SearchString: ComponentFramework.PropertyTypes.StringProperty;
     APIKey: ComponentFramework.PropertyTypes.StringProperty;
     BaseURL: ComponentFramework.PropertyTypes.StringProperty;
