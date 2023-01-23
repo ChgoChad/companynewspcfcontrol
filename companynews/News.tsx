@@ -11,7 +11,7 @@ export class News {
   private _useBingWebSearch: boolean;
   private _searchUrl: string;
 
-  public constructor(apiKey: string, baseUrl: string, useBingWebSearch: boolean) {
+  public constructor(apiKey: string, baseUrl: string, useBingWebSearch: boolean = true) {
     this._apiKey = apiKey;
     this._baseUrl = baseUrl;
     this._useBingWebSearch = useBingWebSearch;
