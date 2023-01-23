@@ -15,9 +15,7 @@ export class BingParser {
 
 
   public getNews(): NewsItemProps[] {
-    var newsItems: NewsItemProps[] = [];
-    console.log(this._apiJson);
-    
+    var newsItems: NewsItemProps[] = [];    
 
     if (this._newsOrSearch) {
 
@@ -47,14 +45,14 @@ export class BingParser {
         }
 
         //newsItem.imageName   = this._newsJson.value[i].image.thumbnail.name === null ? "" :
-        newsItem.title = this._apiJson.value[i].name;
+        newsItem.title       = this._apiJson.value[i].name;
         newsItem.newsContent = this._apiJson.value[i].description;
-        newsItem.url = this._apiJson.value[i].url;
-        newsItem.source = this.getHost(newsItem.url);
-        newsItem.category =
-          this._apiJson.value[i].category !== null
+        newsItem.url         = this._apiJson.value[i].url;
+        newsItem.source      = this.getHost(newsItem.url);
+        newsItem.category    = 
+          (this._apiJson.value[i].category !== null
             ? this._apiJson.value[i].category
-            : "";
+            : "");
         newsItem.agoTime = this.getTimeAgo(
           new Date(this._apiJson.value[i].datePublished)
         );
@@ -89,14 +87,14 @@ export class BingParser {
         }
 
         //newsItem.imageName   = this._newsJson.value[i].image.thumbnail.name === null ? "" :
-        newsItem.title = this._apiJson.webPages.value[i].name;
+        newsItem.title       = this._apiJson.webPages.value[i].name;
         newsItem.newsContent = this._apiJson.webPages.value[i].snippet;
-        newsItem.url = this._apiJson.webPages.value[i].url;
-        newsItem.source = this.getHost(newsItem.url);
-        newsItem.category =
-          this._apiJson.webPages.value[i].category !== null
+        newsItem.url         = this._apiJson.webPages.value[i].url;
+        newsItem.source      = this.getHost(newsItem.url);
+        newsItem.category    = 
+          (this._apiJson.webPages.value[i].category !== null
             ? this._apiJson.webPages.value[i].category
-            : "";
+            : "");
         newsItem.agoTime = this.getTimeAgo(
           new Date(this._apiJson.webPages.value[i].dateLastCrawled)
         );

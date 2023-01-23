@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <manifest>
-  <control namespace="companynews" constructor="companynews" version="0.0.3" display-name-key="companynews" description-key="CompanyNewsControl displays recent news about a company by using bing apin" control-type="virtual" api-version="1.3.4">
+  <control namespace="companynews" constructor="companynews" version="1.5.0" display-name-key="companynews" description-key="CompanyNewsControl displays recent news about a company by using Bing Search API" control-type="virtual" api-version="1.3.4">
     <external-service-usage enabled="true">
       <domain>www.bing.com</domain>
       <domain>api.bing.microsoft.com</domain>

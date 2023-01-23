@@ -11,6 +11,7 @@
     <Name>companynews</Name>
     <ProjectGuid>24b8e60e-25a3-42e5-85c6-e4d874c8f8ed</ProjectGuid>
     <OutputPath>$(MSBuildThisFileDirectory)out\controls</OutputPath>
+    <PcfBuildMode>production</PcfBuildMode>
   </PropertyGroup>
 
   <PropertyGroup>

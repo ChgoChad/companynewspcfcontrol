@@ -83,10 +83,6 @@ export class NewsItemListComponent extends React.Component<NewsItemsListProps, N
 
   private _onChange = (
 		ev: React.FormEvent<HTMLElement | HTMLInputElement> | undefined, checked?: boolean): void => {
-		// this.setState((prevState: boolean): checked => {
-		// 	prevState._searchOrNews = !!checked;
-		// 	return prevState;
-		// });
       this._searchOrNews = (checked ? false: true);
       this.getNews();
 	};
