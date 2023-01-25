@@ -43,9 +43,9 @@ Outline the file contents of the repository. It helps users navigate the codebas
 ## Prerequisites
 
 - Install **PowerApps Command Line (CLI) Support** - You can download [here](https://docs.microsoft.com/en-us/powerapps/developer/component-framework/get-powerapps-cli)
-- Install **Microsoft Visual Studio build environment** - If you have a full version of Visual Studio installed then you already have it---if you don't, you can find it [here]().
-- A working installation of **Node.js** and **npm**. This project is based on Node v18.8.2.
-- Obtain a **Bing News Search API key** from [Azure Cognative Services]().  More details on how to do that below. 
+- Install **Build Tools for Visual Studio** - You can find it [here](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022), **~or~** If you have a full version of Visual Studio installed then you already have it.
+- A working installation of **Node.js** and **npm**. This project is based on Node v18.8.2. You can get node [here](https://nodejs.org/en/download/)
+- Obtain a **Bing News Search API key** from [Bing Search on Azure Marketplace](https://www.microsoft.com/en-us/bing/apis).  More details on how to do that below. 
  
 ## Setup
 
@@ -65,30 +65,41 @@ For running the code use `npm start`.  The node.js project will compile and auto
 ### Add the company news control to the account main form
 The steps in this article add the company news control to the account main form already configured to query news topics collected from Bing News. You can use similar steps to add the control to the main form for other entities, such as contact and competitor.
 
-### Get the Bing News API key and URL
-The news control requires a news API URL, API key, and more news URL. For Bing News, the more news URL is preconfigured in the control to use https://www.bing.com/news/search. For the News API URL, and API Key, you’ll need to provide these by creating a Cognitive Service component under your Azure account. Once created, you will get the API key and API URL under the Keys and Endpoint section.  
+### 1. Get the Bing News API key and URL
+
+The news control requires a Bing Search API endpoint URL and API key. For the News API URL, and API Key, you will need to sign up for the service from Azure Marketplace. More information on the Bing Search API service can be found [here](https://www.microsoft.com/en-us/bing/apis). 
+- You can create a new Bing Search service in your Azure account [here](https://aka.ms/bingapisignup). 
+- Once created, you will get the API key and API URL under the Keys and Endpoint section. 
+- There is a free tier available for this API with a limited number of transactions per month. 
+- The same Bing API key covers both Bing News Search and Bing Web Search APIs.
  
-### Import the company news solution 
-1.	Go to the following GitHub [repo](https://github.com/microsoft/companynewspcfcontrol).
-2.	Download **Solutions,zip**. To do this, open the Solutions folder, open **Solutions.zip**, and then select **Download**. 
-3.	Sign-in to Power Apps, and then in the upper right select the environment where you want to install the company news control.
-4.	Select Solutions on the left pane, and then select **Import** on the command bar.
-5.	In the Import solution wizard, select **Choose File**, browse to and select `Solutions.zip`, and then select **Open**. 
+
+### 2. Import the company news solution 
+
+1.	Go to the [releases]() page of this repo.
+2.	Download **Solutions,zip**. This file is a managaed solution of the Company News PCF control and can be imported directly into your environment. 
+    > **Note:** If you have an older version of the Company News control installed, this solution should offer to upgrade your existing solution as the AppID (in the solution manifest) has been kept the same. Instead of downloading, you may elect to build the component from code instead. 
+3.	Sign-in to [Power Apps](https://make.powerapps.com), and then in the upper right select the environment where you want to install the Company News control.
+4.	Select **Solutions** on the left pane, and then select **Import Solution** on the command bar.
+5.	In the Import Solution wizard, select **Choose File**, browse to and select `Solutions.zip`, and then select **Open**. 
 6.	Select **Next**. and then select **Next** again to complete the import. 
 
-### Add the control to the Account main form
+
+### 3. Add the control to the Account main form
+
 1.	In Power Apps, select **Solutions** in the left pane, select **Settings (gear)** on the upper right, and then select **Advanced settings**. 
 2.	Go to **Settings** > **Customizations** > **Customize the System**. 
 3.	In the left navigation tree, expand+ **Entities** > **Account**, select **Forms**, and then open the **Account Main** form.
 4.	In the form editor, add two new text fields, which will be used to pass the API key and base URL to the news component. 
-a.	Select **New Field** from the right navigation Field Explorer. 
-b.	For both **Display Name** and **Name** enter `newsapikey`. Leave the rest of the settings as the default and then select **Save and Close**.  
-c.	Repeat the previous two steps to create another text field. For both the **Display Name** and **Name** enter `newsurl`. Leave the rest of the settings as the default and then select **Save and Close**. 
+    - a.	Select **New Field** from the right navigation Field Explorer. 
+    - b.	For both **Display Name** and **Name** enter `newsapikey`. Leave the rest of the settings as the default and then select **Save and Close**.  
+    - c.	Repeat the previous two steps to create another text field. For both the **Display Name** and **Name** enter `newsurl`. Leave the rest of the settings as the default and then select **Save and Close**. 
 5.	In the form editor, select a place on the form where you want the company news control, and then select **Insert tab** > **Section** > **One Column**. 
 6.	To show news by account name, drag and drop the **Account Name** field from the right Field Explorer pane to the newly created section. 
 7.	Select the section and then select Change properties. Enter a descriptive section a name, such as `Company News`. You might want to check **"Show the label of this section on the form"** to provide heading to the section. Select **OK**.
-8.	Select the newly added **Account Name** field and then select **Change Properties** on the Home tab. On the **Field Properties** page, select the **Controls** tab, select **Add Control**, select the `companynews` control, and then select **Add**. 
+8.	Select the newly added **Account Name** field and then select **Change Properties** on the **Home** tab. On the **Field Properties** page, select the **Controls** tab, select **Add Control**, select the `companynews` control, and then select **Add**. 
 9.	Configure the following bindings for the `apikey` and `baseurl` fields. 
+
     - a.	Select **Configure Property** (pencil icon) next to `APIKey`. 
     - b.	From **Bind To** value on a field the dropdown list, select `new_newsapikey (SingleLine.Text)`, and then select **OK**. 
     - c.	Select **Configure Property** (pencil icon) next the `BaseURL`. 
@@ -96,21 +107,24 @@ c.	Repeat the previous two steps to create another text field. For both the **Di
     - e.	On the **Field Properties** page, select the Web, Phone, and Tablet, client options. 
     - f.	On the **Field Properties** page, select the **Display** tab, clear the `Display Label` on form option, and then select **OK**. 
 
-### To provide `API Key` and `Base URL` default values, use business rules.
+
+### 4. To provide `API Key` and `Base URL` default values, use business rules.
+
 In this version of the companynews component the user can switch between **Bing News** and a **Bing Web** search. Both types of searches are available under the same API key, however they have different endpoints. In the `Base URL` field you will need to concatenate both endpoints with a `|` character in between them. 
    1. Select **Business Rules** from the form editor, and then select **New Business Rule** from the bottom of the right pane. 
    2. In the business rule designer, select **Condition** on the designer canvas, set **Field** to `Account Name` and **Operator** to `Contains data`, and then select **Apply**. 
    3. Then, select the **Components** tab, drag a **Set Field Value** action, and provide a field value where **Field** is `newsapikey` and the value is the Key you copied from the Azure Cognitive Services properties. 
    4. Create another **Set Field Value** action where **Field** is `newsurl` and add the value as the Endpoint you copied from the Azure Cognitive Services properties. Make sure to append `/v7.0/news/search` at the end of news URL.
    5. After the Bing News URL type the `|` character. Now append the Bing Websearch endpoint from Azure. The final URL should look similiar to this: 
-   ``` 
-   https://api.bing.microsoft.com/v7.0/news/search|https://api.bing.microsoft.com/v7.0/search
-   ```   
+    ``` 
+    https://api.bing.microsoft.com/v7.0/news/search|https://api.bing.microsoft.com/v7.0/search
+    ```   
    6. Save and Activate the rule. Close the business rule designer. 
-   7. Make sure you add the newly created fields, `newsapikey` and `newsurl`, to Account Form, but mark **Default Visible** as `false`. 
+   7. Make sure you add the newly created fields, `newsapikey` and `newsurl`, to the Account Form, but mark **Default Visible** as `false`. 
    8. In the form designer, select **Save** and then select **Publish**. 
 
 That's it! The control should render on any Account page. If no results are found for the search the control will display ***No news found***. Please log any issues in the Github issue tracker. 
+
 
 ## Contributing
 

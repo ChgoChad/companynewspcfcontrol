@@ -44,16 +44,20 @@ Executing `npm start` will open a browser and display the component. To test the
 
 ## Creating Solution zip
 Once you have tested the component and made any adjustments needed, you need to package the code into a solution which you will upload to our CRM org.
-•	Create a folder named Solution and use the following commands to create the solution package 
-•	Create a new solutions project using the following command. 
-pac solution init --publisher-name <<publishername>> --publisher-prefix <<prefix>>
-For example:
-pac solution init --publisher-name developer --publisher-prefix dev
- 
-•	Once the new solution project is created, refer the Solutions folder to the location where the created sample component is located. 
- 
-pac solution add-reference --path <<Path to Component Directory - root folder of the repo, which contains the pcfproj file >>
- 
+1.	Create a folder named Solution and use the following commands to create the solution package 
+2.	Create a new solutions project using the following command. 
+    ```
+    pac solution init --publisher-name <<publishername>> --publisher-prefix <<prefix>>
+    ```
+    For example:
+    ```
+    pac solution init --publisher-name developer --publisher-prefix dev
+    ```
+
+3.	Once the new solution project is created, refer the Solutions folder to the location where the created sample component is located. 
+    ```  
+    pac solution add-reference --path <<Path to Component Directory - root folder of the repo, which contains the pcfproj file >>
+    ``` 
 For example:
   ```
     pac solution add-reference --path c:\downloads\mysamplecomponent
