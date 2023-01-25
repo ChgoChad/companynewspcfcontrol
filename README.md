@@ -59,7 +59,7 @@ Here is an overview of the steps needed for using the component:
 ## Running the sample
 
 For running the code use `npm start`.  The node.js project will compile and automatcially launch a web server and open the PowerApps Component Framework Test Environment. The test environment will have blank fields as defined by your control manifest file. Filling in these values should give your compoent everything it needs to render in the test harness.
-
+- ---
 ## Using the solution/component with Dynamics 365 CRM
 
 ### Add the company news control to the account main form
@@ -116,9 +116,10 @@ In this version of the companynews component the user can switch between **Bing 
    3. Then, select the **Components** tab, drag a **Set Field Value** action, and provide a field value where **Field** is `newsapikey` and the value is the Key you copied from the Azure Cognitive Services properties. 
    4. Create another **Set Field Value** action where **Field** is `newsurl` and add the value as the Endpoint you copied from the Azure Cognitive Services properties. Make sure to append `/v7.0/news/search` at the end of news URL.
    5. After the Bing News URL type the `|` character. Now append the Bing Websearch endpoint from Azure. The final URL should look similiar to this: 
-    ``` 
-    https://api.bing.microsoft.com/v7.0/news/search|https://api.bing.microsoft.com/v7.0/search
-    ```   
+   ``` 
+   https://api.bing.microsoft.com/v7.0/news/search|https://api.bing.microsoft.com/v7.0/search
+   ```   
+   
    6. Save and Activate the rule. Close the business rule designer. 
    7. Make sure you add the newly created fields, `newsapikey` and `newsurl`, to the Account Form, but mark **Default Visible** as `false`. 
    8. In the form designer, select **Save** and then select **Publish**. 
