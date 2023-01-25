@@ -78,7 +78,7 @@ The news control requires a Bing Search API endpoint URL and API key. For the Ne
 
 1.	Go to the [releases]() page of this repo.
 2.	Download **Solutions,zip**. This file is a managaed solution of the Company News PCF control and can be imported directly into your environment. 
-    > **Note:** If you have an older version of the Company News control installed, this solution should offer to upgrade your existing solution as the AppID (in the solution manifest) has been kept the same. Instead of downloading, you may elect to build the component from code instead. 
+    > **Note:** If you have an older version of the Company News control installed, this solution should offer to upgrade your existing solution as the AppID (in the solution manifest) has been kept the same. Instead of downloading, you may elect to build the component from code instead. More info on how to build and package this solution from source code can be found in the [README.md](/companynews/README.md) file in the `companynews` directory. 
 3.	Sign-in to [Power Apps](https://make.powerapps.com), and then in the upper right select the environment where you want to install the Company News control.
 4.	Select **Solutions** on the left pane, and then select **Import Solution** on the command bar.
 5.	In the Import Solution wizard, select **Choose File**, browse to and select `Solutions.zip`, and then select **Open**. 
