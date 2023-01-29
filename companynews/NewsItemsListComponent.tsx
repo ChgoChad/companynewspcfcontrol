@@ -60,7 +60,7 @@ export class NewsItemListComponent extends React.Component<NewsItemsListProps, N
     morenews = Constants.MoreNews + "?q=" + this._searchString;
 
     return (
-        <div>
+        <div className="companynews.companynews">
           <div className="Title">
             <h4 id="newsTitle">
               News for &quot;{this.props.searchString}&quot;

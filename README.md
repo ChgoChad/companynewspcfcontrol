@@ -20,6 +20,7 @@ This project was originally a Microsoft sample provided with the Dynamics 365 SD
 - Completely **React and Fluent-UI native** in a Dynamics or Power Platform Environment (it uses the React and Fluent-UI provided by the environment and does not load its own copy of the framework)
 - Several styling updates to improve the overall appearance of the control
 - The Bing News search API originally included does not always return relevant results, so I added the ability to use a regular Bing web search instead of a Bing News search. The search that is used is determined by a toggle button in the main UI of the control allowing the user to switch search sources on the fly. 
+- The CSS file has been refactored per current Microsoft guidelines. The old version could break existing styling on a form as it was not scoped to the current control.
 - ---
 At times we need to fetch and show news about certain elements which are shown in the application or a page. For example, in a CRM application showing a list of accounts, a salesperson might want to keep a check on the latest news about the company.
 
@@ -78,7 +79,11 @@ The news control requires a Bing Search API endpoint URL and API key. For the Ne
 
 1.	Go to the [releases]() page of this repo.
 2.	Download **Solutions,zip**. This file is a managaed solution of the Company News PCF control and can be imported directly into your environment. 
-    > **Note:** If you have an older version of the Company News control installed, this solution should offer to upgrade your existing solution as the AppID (in the solution manifest) has been kept the same. Instead of downloading, you may elect to build the component from code instead. More info on how to build and package this solution from source code can be found in the [README.md](/companynews/README.md) file in the `companynews` directory. 
+    
+    > **Note:** If you have an older version of the Company News control installed, this solution should offer to upgrade your existing solution as the AppID (in the solution manifest) has been kept the same. 
+
+    > **Building from Source Code:** Instead of downloading the pre-compiled solution, you may elect to build the component from code instead. More info on how to build and package this solution from source code can be found in the [README.md](/companynews/README.md) file in the `companynews` directory. 
+
 3.	Sign-in to [Power Apps](https://make.powerapps.com), and then in the upper right select the environment where you want to install the Company News control.
 4.	Select **Solutions** on the left pane, and then select **Import Solution** on the command bar.
 5.	In the Import Solution wizard, select **Choose File**, browse to and select `Solutions.zip`, and then select **Open**. 
@@ -113,9 +118,9 @@ The news control requires a Bing Search API endpoint URL and API key. For the Ne
 In this version of the companynews component the user can switch between **Bing News** and a **Bing Web** search. Both types of searches are available under the same API key, however they have different endpoints. In the `Base URL` field you will need to concatenate both endpoints with a `|` character in between them. 
    1. Select **Business Rules** from the form editor, and then select **New Business Rule** from the bottom of the right pane. 
    2. In the business rule designer, select **Condition** on the designer canvas, set **Field** to `Account Name` and **Operator** to `Contains data`, and then select **Apply**. 
-   3. Then, select the **Components** tab, drag a **Set Field Value** action, and provide a field value where **Field** is `newsapikey` and the value is the Key you copied from the Azure Cognitive Services properties. 
+   3. Then, select the **Components** tab, drag a **Set Field Value** action, and provide a field value where **Field** is `newsapikey` and the value is the Key you copied from the Bing Search API properties in Azure. 
    4. Create another **Set Field Value** action where **Field** is `newsurl` and add the value as the Endpoint you copied from the Azure Cognitive Services properties. Make sure to append `/v7.0/news/search` at the end of news URL.
-   5. After the Bing News URL type the `|` character. Now append the Bing Websearch endpoint from Azure. The final URL should look similiar to this: 
+   5. After the Bing News URL type the `|` character. Now append the Bing Web Search endpoint from Azure. The final URL should look similiar to this: 
    ``` 
    https://api.bing.microsoft.com/v7.0/news/search|https://api.bing.microsoft.com/v7.0/search
    ```   

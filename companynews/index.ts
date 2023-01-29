@@ -36,10 +36,8 @@ export class companynews implements ComponentFramework.ReactControl<IInputs, IOu
             this._apikey = context.parameters.APIKey.raw;
         if (context.parameters.BaseURL.raw != null)
             this._baseurl = context.parameters.BaseURL.raw;
-        // if (context.parameters.SearchOrNews != null)
-        //     this._searchOrNews = context.parameters.SearchOrNews;
-  
-      this._container = container;
+        
+        this._container = container;
     }
 
     /**

@@ -1,4 +1,5 @@
-.flex-container {
+
+.companynews\.companynews .flex-container {
   display: flex;
   padding-left: 8px;
   padding-right: 15px;
@@ -7,11 +8,12 @@
   border: solid 1px #C0C0C0;
 }
 
-.flex-container:hover {
+
+.companynews\.companynews .flex-container:hover {
   background-color: #efefef;
 }
 
-.flex-container2 {
+.companynews\.companynews .flex-container2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -19,22 +21,22 @@
     text-align: left;
 }
 
-.flex-container3 {
+.companynews\.companynews .flex-container3 {
     display: flex;
     flex-direction: row;
     opacity: .7;
     font-size: 0.85rem;
 }
 
-.flex-item {
+.companynews\.companynews .flex-item {
   padding: 10px;
 }
 
-.news {
+.companynews\.companynews .news {
   font-weight: bold;
 }
 
-img {
+.companynews\.companynews img {
   border-radius: 4px;
   padding: 5px;
   height: 100px;
@@ -42,43 +44,44 @@ img {
   max-width: 150px;
 }
 
-.agoTime::before {
+.companynews\.companynews .agoTime::before {
     content:'\0000a0\1F782\0000a0';
     color: blue;
 }
 
-.category::before {
+.companynews\.companynews .category::before {
     content:'\0000a0\1F782\0000a0';
     color: blue;
 }
 
-h4#newsTitle {
+.companynews\.companynews h4#newsTitle {
   text-align: left;
   padding-bottom: 15px;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
-.moreNews {
+.companynews\.companynews .moreNews {
   text-align: right;
   margin-top: -10px;
 }
 
-.moreNews::before {
+.companynews\.companynews .moreNews::before {
   content: '\0000a0\1F782\0000a0';
   color: blue;
 }
 
-.moreNews > a:link {
+.companynews\.companynews .moreNews > a:link {
   color: grey;
   text-decoration: none;
 }
 
-.moreNews > a:hover {
+.companynews\.companynews .moreNews > a:hover {
   color: grey;
   text-decoration: underline;
 }
 
-.container {
+.companynews\.companynews .container {
   flex: 1;
   align-items: right;
   justify-content: right;
@@ -86,10 +89,10 @@ h4#newsTitle {
   flex-direction: row-reverse;
 }
 
-label.text-92.text-92 {
+.companynews\.companynews label.text-92.text-92 {
   width: 120px!important;
 }
 
-#searchOrNews-label {
+.companynews\.companynews #searchOrNews-label {
   font-weight: 700!important;
 }
