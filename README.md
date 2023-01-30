@@ -61,7 +61,7 @@ Here is an overview of the steps needed for using the component:
 
 For running the code use `npm start`.  The node.js project will compile and automatcially launch a web server and open the PowerApps Component Framework Test Environment. The test environment will have blank fields as defined by your control manifest file. **Filling in these values** should give your compoent everything it needs to render in the test harness. Enter a `searchString`, `APIKey`, and `newsURL` in the appropriate boxes. 
 
-You will find instruction on how to build and package this as a solution for Dataverse [here](../companynews/README.md).
+You will find instruction on how to build and package this as a solution for Dataverse [here](https://github.com/ChgoChad/companynewspcfcontrol/tree/master/companynews).
 - ---
 ## Using the solution/component with Dynamics 365 CRM
 
@@ -79,14 +79,15 @@ The news control requires a Bing Search API endpoint URL and API key. For the Ne
 
 ### 2. Import the company news solution 
 
-1.	Go to the [releases]() page of this repo.
+1.	Go to the [releases](https://github.com/ChgoChad/companynewspcfcontrol/releases) page of this repo.
 2.	Download **Solutions,zip**. This file is a managaed solution of the Company News PCF control and can be imported directly into your environment. 
     
     > **Note:** If you have an older version of the Company News control installed, this solution should offer to upgrade your existing solution as the AppID (in the solution manifest) has been kept the same. 
 
-    > **Building from Source Code:** Instead of downloading the pre-compiled solution, you may elect to build the component from code instead. More info on how to build and package this solution from source code can be found in the [README.md](/companynews/README.md) file in the `companynews` directory. 
+    > **Building from Source Code:** Instead of downloading the pre-compiled solution, you may elect to build the component from code instead. More info on how to build and package this solution from source code can be found in the [README.md](https://github.com/ChgoChad/companynewspcfcontrol/tree/master/companynews) file in the `companynews` directory. 
 
-3.	Sign-in to [Power Apps](https://make.powerapps.com), and then in the upper right select the environment where you want to install the Company News control.
+3.	Sign-in to [Power Apps](https://make.powerapps.com), and then in the upper righ[
+](https://github.com/ChgoChad/companynewspcfcontrol/tree/master/companynews)t select the environment where you want to install the Company News control.
 4.	Select **Solutions** on the left pane, and then select **Import Solution** on the command bar.
 5.	In the Import Solution wizard, select **Choose File**, browse to and select `Solutions.zip`, and then select **Open**. 
 6.	Select **Next**. and then select **Next** again to complete the import. 
@@ -133,7 +134,7 @@ In this version of the companynews component the user can switch between **Bing 
 
 That's it! The control should render on any Account page. If no results are found for the search the control will display ***No news found***. Please log any issues in the Github issue tracker. 
 
-**[ Additinal information can be found [here](../companynews/README.md) ]**
+**[ Additinal information can be found [here](https://github.com/ChgoChad/companynewspcfcontrol/tree/master/companynews) ]**
 
 ## Contributing
 
