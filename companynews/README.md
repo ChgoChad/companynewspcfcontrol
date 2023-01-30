@@ -8,7 +8,7 @@ description: "The plugin provides News feature, by default getting news for a te
 ---
 # CompanyNews Component (Updated and Refactored 2023)
 
-Please refer to explanation in the [main README](./README.md) file for details about what has been updated and improved in this component.
+Please refer to explanation in the [main README](https://github.com/ChgoChad/companynewspcfcontrol) file for details about what has been updated and improved in this component.
 
 ---
 
@@ -85,3 +85,5 @@ Once you have tested the component and made any adjustments needed, you need to 
 
     You should see a `solutions.zip` file under `Solutions\bin\Debug`
     You can use this updated solution instead of the default on provided in GitHub repo. Import this solution to your environmenet and follow the instructions [here](https://github.com/ChgoChad/companynewspcfcontrol) to use it. 
+    
+I hope you find the improvements to this control useful. Please file any issues using the GitHub issue tracker in the main repo. Any suggestions or improvements welcome too.
