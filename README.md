@@ -49,7 +49,7 @@ Outline the file contents of the repository. It helps users navigate the codebas
 - Obtain a **Bing News Search API key** from [Bing Search on Azure Marketplace](https://www.microsoft.com/en-us/bing/apis).  More details on how to do that below. 
  
 ## Setup
-
+hStr
 Here is an overview of the steps needed for using the component:
 1. Clone the component to a local directory
 2. Run `npm install`
@@ -59,7 +59,9 @@ Here is an overview of the steps needed for using the component:
 
 ## Running the sample
 
-For running the code use `npm start`.  The node.js project will compile and automatcially launch a web server and open the PowerApps Component Framework Test Environment. The test environment will have blank fields as defined by your control manifest file. Filling in these values should give your compoent everything it needs to render in the test harness.
+For running the code use `npm start`.  The node.js project will compile and automatcially launch a web server and open the PowerApps Component Framework Test Environment. The test environment will have blank fields as defined by your control manifest file. **Filling in these values** should give your compoent everything it needs to render in the test harness. Enter a `searchString`, `APIKey`, and `newsURL` in the appropriate boxes. 
+
+You will find instruction on how to build and package this as a solution for Dataverse [here](../companynews/README.md).
 - ---
 ## Using the solution/component with Dynamics 365 CRM
 
@@ -131,6 +133,7 @@ In this version of the companynews component the user can switch between **Bing 
 
 That's it! The control should render on any Account page. If no results are found for the search the control will display ***No news found***. Please log any issues in the Github issue tracker. 
 
+**[ Additinal information can be found [here](../companynews/README.md) ]**
 
 ## Contributing
 
