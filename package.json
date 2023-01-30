@@ -1,6 +1,6 @@
 {
   "name": "companynews",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "A PCF compoent that looks up news articles for a company using Bing Search API",
   "scripts": {
     "build": "pcf-scripts build",
