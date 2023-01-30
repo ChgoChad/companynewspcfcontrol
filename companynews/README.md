@@ -6,7 +6,11 @@ products:
 - PowerApps component framework
 description: "The plugin provides News feature, by default getting news for a text from BING news, but can be customized for other news sources."
 ---
-# CompanyNews Component
+# CompanyNews Component (Updated and Refactored 2023)
+
+Please refer to explanation in the [main README](./README.md) file for details about what has been updated and improved in this component.
+
+---
 
 At times we need to fetch and show news about certain elements which are shown in the application or a page. For example, in a CRM application showing a list of accounts, a salesperson might want to keep a check on the latest news about the company.
 
@@ -14,37 +18,39 @@ The control is completely developed using Powerapps Component Framework, and is 
 
 ## Understanding and updating the code
 
-Steps mentioned above are sufficient if you want to use Bing News for fetching news items. But if you want to use any other news service like Google News or change the look and feel of the component, you can do so by updating the code. You can clone the code from the [GitHub Repo]() mentioned earlier
+Steps mentioned above are sufficient if you want to use Bing News for fetching news items. But if you want to use any other news service like Google News or change the look and feel of the component, you can do so by updating the code. You can clone the code from the [GitHub Repo](https://github.com/ChgoChad/companynewspcfcontrol) mentioned earlier
 
-Once you have the code locally, you can test the component, but before that, you need to update the Bing News key and base URL. You can provide it while testing the component locally from interface.
+Once you have the code locally, you can test the component, but before that, you need to update the Bing News API key and base URLs. You can provide it while testing the component locally using the PowerApps Component Framework Test Environment.
  
-***Note:*** You can add more news services. We have an out-of-the-box support for **Bing** news and **Google** news. In this example, we will use the Bing News API.
+>***Note:*** You can add more news services. We have an out-of-the-box support for **Bing** news and **Google** news. In this example, we will use the Bing News API.
+
+In `Constants.ts` Replace **NewsSource** with `Bing` for Bing News (or `Google` for Google News)
 ```
-            NewsSource: any = "NewsSource"; 
+            NewsSource: any = "<<NewsSource>>"; 
 			
             MoreNews: any = "<<More News Base URL>>";
 ```
-In `Constants.ts` Replace **NewsSource** with `Bing` for Bing News (or `Google` for Google News)
+
 
 Provide **News API URL, API Key and More News URL** (https://www.bing.com/news/search)
 
-***Note:*** For Google News, go [here](https://gnews.io/) and create an account to get API and token.
+>***Note:*** For Google News, go [here](https://gnews.io/) and create an account to get API and token.
 
 We can see under `getnews` function, we make a call to the News API and render the results in HTML form. We are using a plain vanilla HTML to show the news, you can adjust the look and feel based on needs. 
 
-Finally, you need to build and start the application. Go to `companynews` folder in the repo and execute following commands:
+Finally, you need to build and start the application. Go to `companynews` folder where you cloned the repo and execute following commands:
 
-- [ ]	**Install** - `npm install`
+1. **Install** - `npm install`
+2. **Build** - `npm run build`
+3. **Start** - `npm start`
 
-- [ ]	**Build** - `npm run build`
+Executing `npm start` will open a browser and display the component in the PowerApps Component Framework Test Environment. You will need to provide a value for `SearchString`, `APIKey`, and `BaseURL` in the text boxes to the right of the test environment. You details on how to get these values are on the main [README](https://github.com/ChgoChad/companynewspcfcontrol) of this repo
 
-- [ ]	**Start** - `npm start`
+## Creating Solution.zip
 
-Executing `npm start` will open a browser and display the component. To test the component, provide a value in the Value text, Key and Base URL  and see the news appearing.
+Once you have tested the component and made any adjustments needed, you need to package the code into a solution which you can then import into your Dataverse environment.
 
-## Creating Solution zip
-Once you have tested the component and made any adjustments needed, you need to package the code into a solution which you will upload to our CRM org.
-1.	Create a folder named Solution and use the following commands to create the solution package 
+1.	Create a folder named `Solution` in the root of where you have cloned this main repo 
 2.	Create a new solutions project using the following command. 
     ```
     pac solution init --publisher-name <<publishername>> --publisher-prefix <<prefix>>
@@ -54,25 +60,28 @@ Once you have tested the component and made any adjustments needed, you need to 
     pac solution init --publisher-name developer --publisher-prefix dev
     ```
 
-3.	Once the new solution project is created, refer the Solutions folder to the location where the created sample component is located. 
+3.	Once the new solution project is created, add a reference from the `Solutions` folder to the location where the created sample component is located. The component directory is the root folder of the repo where the `.pcfproj` file is located.
     ```  
-    pac solution add-reference --path <<Path to Component Directory - root folder of the repo, which contains the pcfproj file >>
+    pac solution add-reference --path <<Path to Component Dir>>
     ``` 
-For example:
-  ```
+    For example:
+    ```
     pac solution add-reference --path c:\downloads\mysamplecomponent
-  ```
--	By default an unmanaged solution will be created. To create a managed solution uncomment following lines from autogenerated Solutions.cdsproj
- 
- > <!-\- Solution Packager overrides, un-comment to use: SolutionPackagerType?>(Managed, Unmanaged, Both)
- > <PropertyGroup>
- >   <SolutionPackageType>Managed</SolutionPackageType>
- > </PropertyGroup>
- > -\->
+    ```
 
+    >By default an **unmanaged** solution will be created. To create a **managed** solution >uncomment following lines from the autogenerated `Solutions.cdsproj`
+    >```
+    ><!-\- Solution Packager overrides, un-comment to use: SolutionPackagerType?>(Managed, >Unmanaged, Both)
+    ><PropertyGroup>
+    >  <SolutionPackageType>Managed</SolutionPackageType>
+    ></PropertyGroup>
+    >-\->
+    >```
 
-- Build Solution 
-msbuild /p:NuGetInteractive="true"  /t:build /restore
+4. Build Solution with the following command
+    ```
+    msbuild /p:NuGetInteractive="true"  /t:build /restore
+    ```
 
-You should see a `solutions.zip` file under `Solutions\bin\Debug`
-You can use this updated solution instead of the default on provided in GitHub repo. Import this solution to your environmenet and follow the instructions [here]() to use it. 
+    You should see a `solutions.zip` file under `Solutions\bin\Debug`
+    You can use this updated solution instead of the default on provided in GitHub repo. Import this solution to your environmenet and follow the instructions [here](https://github.com/ChgoChad/companynewspcfcontrol) to use it. 
